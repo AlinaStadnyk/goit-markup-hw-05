@@ -691,13 +691,13 @@ img {
 .modal-title {
   display: block;
   width: 360px;
-  font-size: 16px;
+  font-size: 12px;
   color: var(--hero-background);
   font-style: normal;
   font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.32px;
-  margin-bottom: 16px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  margin-bottom: 4px;
   text-align: center;
 }
 .modal-input {
@@ -706,8 +706,9 @@ img {
   border-radius: 4px;
   border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.4));
   font-size: 18px;
-  padding: 11px 38px;
+  padding-left: 38px;
   transition: border-color, cubic-bezier(0.4, 0, 0.2, 1);
+  outline: transparent;
 }
 
 .modal-input:focus {
@@ -787,10 +788,18 @@ img {
 }
 .modal-input-icon {
   position: absolute;
-  bottom: 8px;
+  top: 50%;
   left: 16px;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .agreement-policy {
   color: var(--logo-color);
   text-decoration: underline;
+}
+.modal-form-section {
+  margin-bottom: 8px;
+}
+.modal-input-section {
+  position: relative;
 }
