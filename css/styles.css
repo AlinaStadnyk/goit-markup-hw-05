@@ -433,9 +433,10 @@ img {
 .footer-sm-header {
   font-size: 16px;
   font-weight: 500;
-  line-height: 24px;
+  line-height: 1, 5;
   letter-spacing: 0.32px;
   color: #fff;
+  margin-bottom: 16px;
 }
 .footer-sm-section {
   margin-left: 120px;
@@ -477,7 +478,7 @@ img {
   padding-bottom: 120px;
 }
 
-.footer-subscribe-section {
+.footer-subscribe-form {
   display: flex;
   gap: 24px;
   flex-direction: row;
