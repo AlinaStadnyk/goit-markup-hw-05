@@ -439,6 +439,7 @@ img {
   margin-bottom: 16px;
   margin-left: 80px;
 }
+
 .footer-sm-section {
   margin-left: 120px;
 }
@@ -509,7 +510,6 @@ img {
   justify-content: center;
   min-width: 165px;
   height: 40px;
-  justify-content: center;
   align-items: center;
   border-radius: 4px;
   background: var(--logo-color);
@@ -715,8 +715,9 @@ img {
   border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.4));
   font-size: 18px;
   padding-left: 38px;
-  transition: border-color, cubic-bezier(0.4, 0, 0.2, 1);
   outline: transparent;
+  background-color: transparent; 
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:focus {
@@ -726,10 +727,14 @@ img {
   fill: var(--logo-color);
 }
 .form-label {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
+  font-size: 12px; 
+  line-height: 1.17;
+  letter-spacing: 0.04em; 
+  color: var(--link-grey);
+  display: block; 
+  margin-bottom: 4px; 
+
+  
 }
 .modal-label-title {
   display: block;
@@ -742,13 +747,23 @@ img {
   letter-spacing: 0.48px;
 }
 .modal-btn-send {
-  width: 169px;
   height: 56px;
   padding: 16px 32px;
   border-radius: 4px;
   background: var(--logo-color);
   border: none;
   margin: 0 auto;
+  min-width: 169px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff ;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+
 }
 .send-button-text {
   color: #fff;
@@ -786,14 +801,10 @@ img {
   letter-spacing: 0.48px;
   padding: 11px 16px;
 }
-.modal-comment {
-  width: 100%;
-  height: 120px;
-  padding: 8px 16px;
-  border-radius: 4px;
-  border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.4));
-  font-size: 18px;
+.modal-form {
+  position: relative;
 }
+
 .modal-input-icon {
   position: absolute;
   top: 50%;
@@ -811,3 +822,28 @@ img {
 .modal-input-section {
   position: relative;
 }
+.modal-form-comment {
+  margin-bottom: 16px;
+}
+.modal-comment-area {
+width: 100%;
+color: rgba(46, 47, 66, 0.4);
+  height: 120px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.4));
+  font-size: 12px;
+  line-height: 1.17; 
+  letter-spacing: 0.04em;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  background-color: transparent;
+outline: transparent; 
+resize: none;
+transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+border-color: #4D5AE5;
+
+}
+
+
+
+m
