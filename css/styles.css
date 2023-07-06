@@ -433,7 +433,7 @@ img {
 .footer-sm-header {
   font-size: 16px;
   font-weight: 500;
-  line-height: 1, 5;
+  line-height: 1.5;
   letter-spacing: 0.32px;
   color: #fff;
   margin-bottom: 16px;
@@ -506,7 +506,6 @@ img {
 }
 .footer-subscribe-btn {
   display: flex;
-  gap: 16px;
   justify-content: center;
   min-width: 165px;
   height: 40px;
@@ -525,6 +524,7 @@ img {
 }
 .footer-subscribe-icon {
   fill: white;
+   margin-left: 16px;
 }
 
 /* Projects */
