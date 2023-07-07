@@ -775,7 +775,7 @@ img {
   border-color: var(--logo-color);
 }
 .modal-comment-area:focus {
-  border-color: var(--logo-bright);
+  border-color: var(--logo-color);
 }
 
 .modal-input:focus+.modal-input-icon {
