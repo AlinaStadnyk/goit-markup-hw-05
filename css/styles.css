@@ -922,7 +922,7 @@ img {
   fill: transparent;
 }
 
-.modal-checkbox-section:checked+.form-label .custom-checkbox {
+.modal-checkbox-section:checked+.form-label > .custom-checkbox {
   background-color: var(--logo-bright);
   border: none;
   fill: var(--logo-background-light);
